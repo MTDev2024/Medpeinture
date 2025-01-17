@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Medpeinture</title>
+</head>
+<body>
+    <body class="bg-gray-50 text-gray-800">
+        <!-- Navbar -->
+        <nav class="bg-white shadow-md fixed w-full z-10">
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+                <div class="text-lg font-bold">MEDPEINTURE</div>
+                <ul class="flex space-x-6">
+                    <li><a href="#hero" class="hover:text-gray-500">Accueil</a></li>
+                    <li><a href="#services" class="hover:text-gray-500">Prestations</a></li>
+                    <li><a href="#portfolio" class="hover:text-gray-500">Réalisations</a></li>
+                    <li><a href="#reviews" class="hover:text-gray-500">Avis</a></li>
+                    <li><a href="#contact" class="hover:text-gray-500">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+        <!-- Hero Section -->
+        <section id="hero" class="h-[70vh] bg-cover bg-center relative" style="background-image: url('placeholder.jpg');">
+            <div class="bg-black bg-opacity-50 absolute inset-0 flex items-center justify-center">
+                <div class="text-center text-white px-4">
+                    <h1 class="text-4xl md:text-6xl font-bold">Peinture et rénovation sur-mesure pour un intérieur qui vous ressemble</h1>
+                    <p class="mt-4 text-lg md:text-xl">Spécialiste en peinture, placo, enduit et bien plus, nous transformons vos espaces avec passion et expertise</p>
+                    <a href="#contact" class="mt-6 inline-block bg-green-600 text-white py-2 px-6 rounded hover:bg-green-500 transition">Demander un devis</a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Services Section -->
+        <section id="services" class="py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-8">Nos Prestations</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-6 bg-white rounded shadow">
+                        <h3 class="text-xl font-bold mb-2">Peinture Intérieure</h3>
+                        <p>Une finition impeccable pour embellir vos espaces.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded shadow">
+                        <h3 class="text-xl font-bold mb-2">Pose de Placo</h3>
+                        <p>Solutions rapides et durables pour vos cloisons.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded shadow">
+                        <h3 class="text-xl font-bold mb-2">Application d'Enduit</h3>
+                        <p>Préparation et finitions pour des murs parfaits.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded shadow">
+                        <h3 class="text-xl font-bold mb-2">Rénovation complète</h3>
+                        <p>Préparation et finitions pour des murs parfaits.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded shadow">
+                        <h3 class="text-xl font-bold mb-2">Finitions sur-mesure</h3>
+                        <p>Préparation et finitions pour des murs parfaits.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded shadow">
+                        <h3 class="text-xl font-bold mb-2">Etc</h3>
+                        <p>Préparation et finitions pour des murs parfaits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-8">Nos Réalisations</h2>
+                <h3 class="text-xl font-bold mb-8">Quelques exemples de chantiers réalisés</h3>
+                <div class="carousel">
+                    <!-- Add your carousel implementation here -->
+                    <div class="p-4 bg-white rounded shadow">Photo 1</div>
+                    <div class="p-4 bg-white rounded shadow">Photo 2</div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Reviews Section -->
+        <section id="reviews" class="py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-8">Ce que nos clients disent de nous</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="p-6 bg-white rounded shadow">
+                        <p>"Excellent service !"</p>
+                        <p class="text-sm text-gray-500">- Jean D.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded shadow">
+                        <p>"Professionnel et rapide !"</p>
+                        <p class="text-sm text-gray-500">- Marie L.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-8">Contactez-Nous</h2>
+                <form class="bg-white p-6 rounded shadow max-w-md mx-auto">
+                    <div class="mb-4">
+                        <label for="name" class="block text-left text-gray-700">Nom</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border rounded" placeholder="Votre nom">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-left text-gray-700">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border rounded" placeholder="Votre email">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-left text-gray-700">Message</label>
+                        <textarea id="message" class="w-full px-4 py-2 border rounded" placeholder="Décrivez votre projet"></textarea>
+                    </div>
+                    <button type="submit" class="bg-green-600 text-white py-2 px-6 rounded hover:bg-green-500 transition">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-4">
+            <div class="container mx-auto px-4 text-center">
+                <p>&copy; 2025 Medpeinture. Tous droits réservés.</p>
+                <p><a href="#" class="text-green-500 hover:underline">Mentions légales</a> | <a href="#" class="text-green-500 hover:underline">Politique de confidentialité</a></p>
+                <p><a href="#" class="text-green-500 hover:underline">Facebook</a> |
+            </div>
+        </footer>
+
+
+<script src="landing_page_script.js"></script>
+</body>
+</html>
