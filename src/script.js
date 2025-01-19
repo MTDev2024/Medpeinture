@@ -1,5 +1,17 @@
 // Script for adding interactivity to the landing page
 
+
+
+ // Hamburger Menu toggle functionality
+ const menuButton = document.getElementById('menu-button');
+ const menu = document.getElementById('menu');
+
+ menuButton.addEventListener('click', () => {
+     menu.classList.toggle('hidden');
+ });
+
+
+
 // Carousel Functionality
 const carousel = document.querySelector('.carousel');
 let currentIndex = 0;
